@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>RPM</title>
+<meta charset="utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style type="text/css">
+ .flex-container { 
+ //position: fixed;
+ display: flex;
+ justify-content: center;
+ border: 2px solid red;
+ padding: 50px;
+ height: 50px;
+ 
+ }
+ 
+ #btnExport {
+ display: flex;
+ justify-content: flex-end;
+ border: 2px solid blue;
+ width: 150px;
+ margin-top: 75px;
+ margin-left: 300px;
+ 
+ }
+  
+ table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+ }
+ 
+ #iRpm, #iArt {
+  height: 50px;
+  width: 100px;
+  margin-right: 50px;
+  margin-left: 50px
+ }
+ 
+ #rpm, #art {
+  border: 1px solid red;
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
+ }
+ 
+ /*=============================================*/
+ 
+         table
+        {
+            width: 300px;
+            font: 17px Calibri;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+		.remover-borda {
+		border: none;
+		border-bottom: none;
+		}
+ 
+</style>
+</head>
+<body>
+
+<h1 style="border: 1px solid red; width: 200px," align="center">INPUT RPM</h1>
+
+<div  class="flex-container">
+ 
+ 
+  <div id="rpm" align="center"><a>RPM</a></div>
+ 
+   <div id="art" align="center"><a>ARTIGO</a></div>
+  
+
+ </div>
+
+ <div class="flex-container">
+      <div>
+	   <input id="iRpm" placeholder="teste"></input>
+	  </div>
+	
+	  <div>
+	   <input id="iArt" placeholder="teste"></input>
+	  </div>
+ </div>
+ 
+ <div class="flex-container">
+  <input type="button" id="btnSalvar" value="SALVAR" onclick="add()"/>
+  
+  <input type="button" id="btnSalvar" value="limpar" onclick="limpar()"/>
+ </div>
+
+<div id="btnExport">
+<p id="marca">BAE solutions</p>
+ <input type="button" id="Export" value="EXPORT" />
+</div>
+
+<img src="C:\Users\kledisom.oliveira\Pictures\bae so.PNG" alt="some text" width=60 height=40>
+
+
+<!--=============================tabela=================================-->
+
+  <div id="tabela">
+        <table> 
+		
+		  
+		   <tr>
+		     <th colspan="9"><img src="Captura de tela 2021-07-19 165754.png"/></th>
+		   </tr>
+	
+<tr height="50px"><td>DATA: </td></tr>		
+
+		
+		<tr>
+		<th>TEAR</th>
+		<th>RPM</th>
+		<th>ARTIGO</th>
+
+		<th>TEAR</th>
+		<th>RPM</th>
+		<th>ARTIGO</th>
+
+		<th>TEAR</th>
+		<th>RPM</th>
+		<th>ARTIGO</th>
+		</tr>
+		
+<tr class="example">
+<td>1</td>
+<td></td>
+<td></td>
+
+<td>25</td>
+<td></td>
+<td></td>
+
+<td>49</td>
+<td></td>
+<td></td>
+</tr>
+
+			<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+			
+			<td>26</td>
+			<td></td>
+			<td></td>
+			
+			<td>50</td>
+			<td></td>
+			<td></td>
+			</tr>
+			
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+
+<td>27</td>
+<td></td>
+<td></td>
+
+<td>51</td>
+<td></td>
+<td></td>
+</tr>
+
+			<tr>
+			<td>4</td>
+			<td></td>
+			<td></td>
+			
+			<td>28</td>
+			<td></td>
+			<td></td>
+			
+			<td>52</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+
+<td>29</td>
+<td></td>
+<td></td>
+
+<td>53</td>
+<td></td>
+<td></td>
+</tr>
+
+			<tr>
+			<td>6</td>
+			<td></td>
+			<td></td>
+			
+			<td>30</td>
+			<td></td>
+			<td></td>
+			
+			<td>54</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+
+<td>31</td>
+<td></td>
+<td></td>
+
+<td>55</td>
+<td></td>
+<td></td>
+</tr>
+
+				<tr>
+				<td>8</td>
+				<td></td>
+				<td></td>
+				
+				<td>32</td>
+				<td></td>
+				<td></td>
+				
+				<td>56</td>
+				<td></td>
+				<td></td>
+				</tr>
+
+<tr>
+<td>9</td>
+<td></td>
+<td></td>
+
+<td>33</td>
+<td></td>
+<td></td>
+
+<td>57</td>
+<td></td>
+<td></td>
+</tr>
+
+				<tr>
+				<td>10</td>
+				<td></td>
+				<td></td>
+				
+				<td>34</td>
+				<td></td>
+				<td></td>
+				
+				<td>58</td>
+				<td></td>
+				<td></td>
+				</tr>
+
+	<tr>
+	<td>11</td>
+	<td></td>
+	<td></td>
+	
+	<td>35</td>
+	<td></td>
+	<td></td>
+	
+	<td>59</td>
+	<td></td>
+	<td></td>
+	</tr>
+
+					<tr>
+					<td>12</td>
+					<td></td>
+					<td></td>
+					
+					<td>36</td>
+					<td></td>
+					<td></td>
+					
+					<td>60</td>
+					<td></td>
+					<td></td>
+					</tr>
+					
+					<tr>
+						<td>
+						&nbsp;
+						</td>
+							  <td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+
+					  
+					</tr>
+					
+<tr>					
+<td>MEDIA</td>
+<td></td>
+<td></td>
+
+<td>MEDIA</td>
+<td></td>
+<td></td>
+
+<td>MEDIA</td>
+<td></td>
+<td></td>
+</tr>
+                    <tr><td>&nbsp;</td></tr>
+
+														
+
+<tr>
+<td>13</td>
+<td></td>
+<td></td>
+
+<td>37</td>
+<td></td>
+<td></td>
+
+<td>61</td>
+<td></td>
+<td></td>
+</tr>
+
+				<tr>
+				<td>14</td>
+				<td></td>
+				<td></td>
+				
+				<td>38</td>
+				<td></td>
+				<td></td>
+				
+				<td>62</td>
+				<td></td>
+				<td></td>
+				</tr>
+
+<tr>
+<td>15</td>
+<td></td>
+<td></td>
+
+<td>39</td>
+<td></td>
+<td></td>
+
+<td>63</td>
+<td></td>
+<td></td>
+</tr>
+
+				<tr>
+				<td>16</td>
+				<td></td>
+				<td></td>
+				
+				<td>40</td>
+				<td></td>
+				<td></td>
+				
+				<td>64</td>
+				<td></td>
+				<td></td>
+				</tr>
+
+<tr>
+<td>17</td>
+<td></td>
+<td></td>
+
+<td>41</td>
+<td></td>
+<td></td>
+
+<td>65</td>
+<td></td>
+<td></td>
+</tr>
+
+			<tr>
+			<td>18</td>
+			<td></td>
+			<td></td>
+			
+			<td>42</td>
+			<td></td>
+			<td></td>
+			
+			<td>66</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+			<tr>
+			<td>19</td>
+			<td></td>
+			<td></td>
+			
+			<td>43</td>
+			<td></td>
+			<td></td>
+			
+			<td>67</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+	<tr>
+	<td>20</td>
+	<td></td>
+	<td></td>
+	
+	<td>44</td>
+	<td></td>
+	<td></td>
+	
+	<td>68</td>
+	<td></td>
+	<td></td>
+	</tr>
+
+			<tr>
+			<td>21</td>
+			<td></td>
+			<td></td>
+			
+			<td>45</td>
+			<td></td>
+			<td></td>
+			
+			<td>69</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+					<tr>
+					<td>22</td>
+					<td></td>
+					<td></td>
+					
+					<td>46</td>
+					<td></td>
+					<td></td>
+					
+					<td>70</td>
+					<td></td>
+					<td></td>
+					</tr>
+
+			<tr>
+			<td>23</td>
+			<td></td>
+			<td></td>
+			
+			<td>47</td>
+			<td></td>
+			<td></td>
+			
+			<td>71</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+					<tr>
+					<td>24</td>
+					<td></td>
+					<td></td>
+					
+					<td>48</td>
+					<td></td>
+					<td></td>
+					
+					<td>72</td>
+					<td></td>
+					<td></td>
+					</tr>
+					
+					<tr>
+					<td>12</td>
+					<td></td>
+					<td></td>
+					
+					<td>36</td>
+					<td></td>
+					<td></td>
+					
+					<td>60</td>
+					<td></td>
+					<td></td>
+					</tr>
+					
+					<tr>
+						<td>
+						&nbsp;
+						</td>
+							  <td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+
+					  
+					</tr>
+					
+<tr>					
+<td>MEDIA</td>
+<td></td>
+<td></td>
+
+<td>MEDIA</td>
+<td></td>
+<td></td>
+
+<td>MEDIA</td>
+<td></td>
+<td></td>
+</tr>
+                    <tr><td>&nbsp;</td></tr>
+
+			<tr>
+			<td>73</td>
+			<td></td>
+			<td></td>
+			
+			<td>79</td>
+			<td></td>
+			<td></td>
+			
+			<td>85</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+					<tr>
+					<td>74</td>
+					<td></td>
+					<td></td>
+					
+					<td>80</td>
+					<td></td>
+					<td></td>
+					
+					<td>86</td>
+					<td></td>
+					<td></td>
+					</tr>
+
+			<tr>
+			<td>75</td>
+			<td></td>
+			<td></td>
+			
+			<td>81</td>
+			<td></td>
+			<td></td>
+			
+			<td>87</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+					<tr>
+					<td>76</td>
+					<td></td>
+					<td></td>
+					
+					<td>82</td>
+					<td></td>
+					<td></td>
+					
+					<td>88</td>
+					<td></td>
+					<td></td>
+					</tr>
+
+			<tr>
+			<td>77</td>
+			<td></td>
+			<td></td>
+			
+			<td>83</td>
+			<td></td>
+			<td></td>
+			
+			<td>89</td>
+			<td></td>
+			<td></td>
+			</tr>
+
+					<tr>
+					<td>78</td>
+					<td></td>
+					<td></td>
+					
+					<td>84</td>
+					<td></td>
+					<td></td>
+					
+					<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+					
+					<tr>
+						<td>
+						&nbsp;
+						</td>
+							  <td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+								<td>
+								&nbsp;
+								</td>
+
+					  
+					</tr>
+					
+<tr>					
+<td>MEDIA</td>
+<td></td>
+<td></td>
+
+<td>MEDIA</td>
+<td></td>
+<td></td>
+
+<td>MEDIA</td>
+<td></td>
+<td></td>
+</tr>
+
+ <tr><td>&nbsp;</td></tr>
+
+			<tr class="remover-borda">
+				<td colspan="9"><img src="rodape.png"/></td>
+			</tr>
+
+			
+ 
+        </table>
+    </div>
+    <p>
+        <input type="button" value="Criar PDF" id="btnImprimir" onclick="CriaPDF()" />
+    </p>
+
+<script src="RMP.js">
+</script>
+
+</body>
+</html> 

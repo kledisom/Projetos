@@ -1,0 +1,2 @@
+# rpm
+estudo sobre indexedDB
