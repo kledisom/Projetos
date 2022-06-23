@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+a:hover {
+ background-color: lime;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.icon1, .icon2, .icon3 {
+    width: 30px;
+    height: 6px;
+    background-color:#000;
+    margin: 5px;
+}
+
+.dropdown:hover .icon2 {
+    display: none;
+}
+.dropdown:hover .icon1 {
+    transform: rotate(50deg);
+    margin-top: 10px;
+    transition: transform 1s;
+}
+.dropdown:hover .icon3 {
+    transform: rotate(130deg);
+    margin-top: -10px;
+    transition: transform 1s;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="mainmenubtn">
+    <div class="icon1"></div>
+    <div class="icon2"></div>
+    <div class="icon3"></div>
+</button>
+  <div class="dropdown-child">
+    <a href="http://wwww.yourdomain.com/page1.html">Sub Menu 1</a>
+    <a href="http://wwww.yourdomain.com/page2.html">Sub Menu 2</a>
+    <a href="http://wwww.yourdomain.com/page3.html">Sub Menu 3</a>
+    <a href="http://wwww.yourdomain.com/page4.html">Sub Menu 4</a>
+    <a href="http://wwww.yourdomain.com/page5.html">Sub Menu 5</a>
+  </div>
+</div>
+</body>
+</html>
