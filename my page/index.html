@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+	
     <title>my page</title>
 
 <style>
@@ -19,12 +23,14 @@
         background-size: 100%;
         background-color: #fff;
         color: #fff;
+		font-family: 'Poppins', sans-serif;
     }
 
     aside {
-        background-color: #161616;
+        background-color: #040b14;
         height: 100vh;
         width: 20vw;
+		color: #fff;
     }
 
     .perfil {
@@ -35,15 +41,26 @@
 
         height: 250px;
         width: 270px;
+		
     }
 
-    .perfil img {
+    #imgPerfil {
         background-color: aqua;
         height: 100px;
         width: 100px;
         border-radius: 50%;
         margin: 10px;
         margin-bottom: 15px;
+		border: 10px solid #212529;
+    }
+	
+	.perfil img {
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 10px;
+		border: 3px solid #212529;
     }
 
     .perfil nav {
@@ -52,7 +69,6 @@
 
         height: 50px;
         width: 100%;
-        margin-top: 20px;
     }
 
     .perfil nav img {
@@ -62,16 +78,15 @@
     }
 
     .topicos {
-        border: 1px solid red;
-        height: 300px;
+        height: 250px;
         width: 270px;
+		color: #fff;
     }
 
     .topicos div {
         display: flex;
         align-items: center;
 
-        border: 1px solid violet;
         height: 60px;
         width: 100%;
     }
@@ -79,13 +94,26 @@
     .topicos div img {
         height: 36px;
         width: 36px;
+		margin-left: 10px;
+		
     }
 
     .topicos div a {
         width: 100%;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+		margin-left: 10px;
+		color: #fff;
     }
+	
+	aside footer {
+	 display: flex;
+	 justify-content: center;
+	 align-items: flex-end;
+	 
+	 height: 100px;
+	}
+	
 
 </style>
 
@@ -93,12 +121,13 @@
 <body>
     <aside>
         <div class="perfil">
-            <img src="comment-faire-pour-etre-autoentrepreneur-11.jpg" />
+            <img id="imgPerfil" src="comment-faire-pour-etre-autoentrepreneur-11.jpg" />
             <h4>KLEDISOM OLIVEIRA</h4>
             <nav>
                 <img src="./ico/facebook.png" />
                 <img src="./ico/instagram.png" />
                 <img src="./ico/linkedin.png" />
+				<img src="./ico/twitter.png" />
             </nav>
         </div>
 
@@ -106,23 +135,25 @@
   <nav>
     <div>
         <img src="./ico/botao-home.png" />
-        <a href="/" >Home</a>
+        <a href="" >Home</a>
     </div>
     <div>
-        <img src="./ico/botao-home.png" />
-        <a href="/" >About</a>
+        <img src="./ico/user.png" />
+        <a href="" >About</a>
     </div>
     <div>
-        <img src="./ico/botao-home.png" />
-        <a href="/" >Resumo</a>
+        <img src="./ico/resume.png" />
+        <a href="" >Resumo</a>
     </div>
     <div>
-        <img src="./ico/botao-home.png" />
-        <a href="/" >Portfolio</a>
+        <img src="./ico/cv.png" />
+        <a href="" >Portfolio</a>
     </div>
   </nav>  
 </div>
-
+<footer>
+	<h5>Copright KLEDISOM.DEV.BR</h5>
+</footer>
     </aside>
 </body>
 </html>
