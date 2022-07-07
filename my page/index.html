@@ -6,22 +6,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	
     <title>my page</title>
 
 <style>
     * {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
 
     body {
-        background-image: url('comment-faire-pour-etre-autoentrepreneur-11.jpg');
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100%;
-        background-color: #fff;
+		display: flex;
+	
+        <!-- background-image: url('https://wallpaperaccess.com/full/2109964.jpg'); -->
+        <!-- //background-size: auto; -->
+        <!-- background-repeat: no-repeat; -->
+        <!-- //background-attachment: fixed; -->
+        <!-- background-size: 80%; -->
+        <!-- background-color: #fff; -->
         color: #fff;
 		font-family: 'Poppins', sans-serif;
     }
@@ -29,7 +35,7 @@
     aside {
         background-color: #040b14;
         height: 100vh;
-        width: 20vw;
+        width: 20Vw;
 		color: #fff;
     }
 
@@ -114,6 +120,61 @@
 	 height: 100px;
 	}
 	
+	.title-main {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	
+	 width: 80Vw;
+	 border: 1px solid lime;
+	 
+	  background-image: url('https://wallpaperaccess.com/full/2109964.jpg');
+        background-repeat: no-repeat;
+        //background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: #fff;
+		color: #161616;
+	}
+	
+	.hello {
+		border-right: 2px solid lime;
+		width: 380px;
+		height: 50px;
+		//background-color: #fff;
+		//animation: example infinite normal;
+		//animation-duration: 8s;
+		overflow: hidden;
+		overflow-wrap: normal;
+		font-size: 30px;
+		color: #000;
+		white-space: nowrap;
+		text-align: center;
+		
+		
+	}
+	
+	.cursor {
+
+		animation: efectCursor 500ms steps(40) infinite normal,
+		              example 5s steps(40) 1s normal both;
+	}
+	
+	
+	@keyframes example {
+		from {
+		width: 0;
+		//background-color: #fff;}
+		to {//background-color: #fff;}
+	}
+	
+	@keyframes efectCursor {
+	 from {
+	 border-right-color: rgba(255, 255, 255, 0,75);
+	}
+	to {
+	 border-right-color: transparent;
+	}
 
 </style>
 
@@ -155,5 +216,17 @@
 	<h5>Copright KLEDISOM.DEV.BR</h5>
 </footer>
     </aside>
+	
+<div class="title-main">
+	<h1>Kledisom Oliveira</h1>		
+	<div class="hello cursor">
+     <h3>Front-end developer.</h3>
+    </div>
+</div>	
+	
+	
+	
+<script></script>
+	
 </body>
 </html>
